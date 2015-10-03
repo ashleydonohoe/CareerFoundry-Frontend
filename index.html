@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <title>Welcome to My Website</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <!-- jQuery is required for Bootstrap to work -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+    <!-- Custom styles for this template go here -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!--JS code for Twitter button-->
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, 'script', 'twitter-wjs');
+    </script>
+
+    <!--JS code for Facebook button-->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <script>
+		$(function() {
+			$('#item1').tooltip();
+			$('#item2').tooltip();
+		});
+	</script>
+    
+    <script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+    
+    <script src="js/jquery.media.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <!-- Navigation bar starts here -->
+    <nav class=" navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Ashley Donohoe</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#work">Work</a>
+                    </li>
+                    <li><a href="#faq">FAQ</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end navbar collapse -->
+        </div>
+        <!-- end nav container-->
+    </nav>
+    <!-- navbar ends here-->
+
+    <section class="container-fluid">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/c-image1.jpg" alt="computer desk">
+                    <div class="carousel-caption white-text">
+                        <h3>Need a new or updated website? I can help!</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/c-image2.jpg" alt="laptop computer">
+                    <div class="carousel-caption">
+                        <h3>I also offer writing and editing services.</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/c-image3.jpg" alt="planner and laptop">
+                    <div class="carousel-caption">
+                        <h3>Interested in working together? Let's chat!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--Closing carousel-->
+    </section>
+    <!--Closing the container-->
+
+    <section class="container portfolio gray-background anchor">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <h2>Portfolio Concept</h2>
+                <p>I have experience writing/editing <a href="#" title="I mostly write business, education, and IT-related content" id="item1">content for the web</a>, so I'd like to incorporate these services along with web development ones in my portfolio.</p>
+                <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Some of my writing clients have included the Houston Chronicle, Study.com, RadioShack, and eBay. Contact me for samples of work.">View More.</button>
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <h2>Project Goals</h2>
+                <p>I plan to work 10-15 hours a week (and more time when I'm less busy) to finish by six months.</p>
+                <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="I already have some skills in front-end development and basic programming, so I may work faster than this pace.">View More.</button>
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <h2>Course Goals</h2>
+                <p>I'd like to be able to do freelance full-stack development work after I finish this program since I currently provide <a href="http://www.linkedin.com/in/adee14" target="_blank" title="My LinkedIn profile" id="item2">freelance services</a>. I am also open to entry-level developer positions as well, especially remote positions.</p>
+                <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Although I am too busy for full-time projects right now, feel free to contact me if you have any short-term frontend web development work available.">View More.</button>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Closing First Page container -->
+    <hr>
+
+    <section class="container about anchor" id="about">
+        <div class="about-header">
+            <h1 class="text-center">About Ashley</h1>
+        </div>
+        <div class="row">
+            <div class="pic col-md-3 col-sm-12">
+                <img class="img-responsive center-block" src="img/computer.jpg" alt="computer">
+            </div>
+            <div class="intro col-md-3 col-sm-12">
+                <h2 class="text-center">Introduction</h2>
+                <p>I'm an aspiring web developer with a passion for all things tech.</p>
+            </div>
+            <div class="skills col-md-3 col-sm-12">
+                <h3 class="text-center text-uppercase">My Skills</h3>
+                <ul id="skill-list">
+                    <li>HTML5 and CSS</li>
+                    <li>Ruby</li>
+                    <li>jQuery and JavaScript</li>
+                    <li>Git</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-text">
+            <h3>More About Me</h3>
+            <p>When I am not coding or working, I enjoy playing the piano, learning foreign languages, and doing art projects. I hold a Bachelor of Science in Multidisciplinary Studies with concentrations in business and computer science. I also have a Master of Business Administration degree. My professional background is diverse but is mostly in tech writing, search engine evaluation, English tutoring, and editing.</p>
+        </div>
+    </section>
+    <!-- End About Container-->
+    <hr>
+
+    <section class="container work anchor gray-background" id="work">
+        <div class="row" id="work-header">
+            <h1 class="text-center">My Work</h1>
+        </div>
+        <div class="row" id="work1">
+            <div class="image" id="0">
+            </div>
+            <div class="image" id="1">
+            </div>
+            <div class="image" id="2">
+            </div>
+            <div class="image" id="3">
+            </div>
+        </div>
+    </section>
+    <!--End Work Container-->
+    <hr>
+
+    <section class="container faq-section anchor" id="faq">
+        <div class="faq-heading">
+            <h1 class="text-center white-text">Frequently Asked Questions</h1>
+        </div>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <span class="glyphicon glyphicon-plus"></span> Why did you decide to become a web developer?
+                  </a>
+                </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body gray-background">
+                        I'm a creative person with a love for technology, so I tried building websites and fell in love with the field. Being a web developer gives me the opportunity to exercise my creativity, solve challenging problems, and do work that will benefit others.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    <span class="glyphicon glyphicon-plus"></span> What is your design process?
+                  </a>
+                </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        First, we will work together to look at your website's purpose, target audience, and your goals for the site. We will then work together to plan the design, site map, and features you need. After the website has been designed, we will test it before delivery to ensure it meets your expectations.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    <span class="glyphicon glyphicon-plus"></span> Who are your clients?
+                  </a>
+                </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        I'm able to work for individuals, non-profit organizations, small businesses, or corporations. Whether you need a one-time project or ongoing developer, I can help.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <span class="glyphicon glyphicon-plus"></span> How much are your services?
+                  </a>
+                </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Since each customer has a specific need and development time varies, I offer a customized quote rather than give flat rates. Feel free to contact me via phone, email, or Twitter for your quote.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                    <span class="glyphicon glyphicon-plus"></span> Are you available to work now?
+                  </a>
+                </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        I am currently available to take on freelance projects on a short-term or long-term basis. Check out the contact page to get in touch.
+                    </div>
+                </div>
+            </div>
+        </div><!--Closing Accordion-->
+   		<div class="row">
+        	<h2 class="text-center white-text">Services Offered</h2>
+            <table id="services">
+            	<tr class="my-row">
+                    <th>Web Development</th>
+                    <th>Content Creation</th>
+                </tr>
+                <tr class="my-row">
+                	<td>Frontend coding with HTML, CSS, and JavaScript</td>
+                    <td>Content writing</td>
+                </tr>
+                 <tr class="my-row">
+                	<td>Backend coding with Ruby on Rails</td>
+                    <td>Content editing</td>
+                </tr>
+                <tr class="my-row">
+                	<td>Responsive design</td>
+                    <td>Content strategy</td>
+                </tr>
+                <tr class="my-row">
+                	<td>Search engine optimization</td>
+                    <td>Image editing</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+        	<h2 class="learn-more white-text">Learn More</h2>
+            <div class="modal-button">
+            	<button class="btn btn-primary" id="modal-button" data-toggle="modal" data-target=".bs-example-modal-lg">See Resume</button>
+            </div>
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" area-hidden="true" data-backdrop="static" data-keyboard="false">
+            	<div class="modal-dialog modal-lg">
+                	<div class="modal-content">
+                    	<div class="modal-header">
+                        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        	<h4 class="modal-title" id="myModalLabel">Resume</h4>
+                        </div>
+                        <div class="modal-body">
+                        	<iframe id="modalframe" src="img/ADRESUME.pdf"></iframe>
+                        </div>
+                    </div>
+                </div>
+        	</div>
+        </div> <!--Ending modal-->
+    </section> <!--Closing Work container-->
+    <hr>
+
+    <section class="container contact-section white-text anchor gray-background" id="contact-section">
+        <div class="row">
+            <div class="header col-md-12">
+                <h1>Contact Ashley</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-info col-lg-4 col-md-4">
+                <ul id="contact-list">
+                    <li><span class="glyphicon glyphicon-home"></span> <strong>Mail:</strong> 555 Street Name, Cincinnati, OH</li>
+                    <li><span class="glyphicon glyphicon-envelope"></span> <strong>Email:</strong> <a class="white-text" href="mailto:ashleyrdonohoe@gmail.com">ashleyrdonohoe@gmail.com</a>
+                    </li>
+                    <li><span class="glyphicon glyphicon-phone"></span> <strong>Phone:</strong> <a class="white-text" href="tel:5139001660">513-900-1660</a>
+                    </li>
+                    <li><span class="glyphicon glyphicon-send"></span> <strong>Twitter:</strong> <a class="white-text" href="http://www.twitter.com/ashleyddesigns1">@ashleydesigns1</a>
+                    </li>
+                </ul>
+                <hr>
+<!--                <div id="visible-comment">
+                </div>-->
+             <div id="map">
+              </div>
+              
+            </div>
+            <div class="form col-lg-8 col-md-8">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <h3>Send a Message</h3>
+                        </div>
+                    </div>
+                    <div class="contact-form center-block">
+                      <div class="form-group row">
+                          <div class="col-lg-8 col-md-8 col-sm-8">
+                              <label for="name">Name*</label>
+                              <input placeholder="Name" class="form-control" type="text" title="Enter your name" id="name" required="required">
+                          </div>
+                          </div>
+                          <div class="form-group row">
+                          <div class="col-lg-8 col-md-8 col-sm-8">
+                              <label for="phone">Phone</label>
+                              <input placeholder="555-555-5555" class="form-control" type="tel" title="Enter your phone number" id="phone" pattern="^[2-9]\d{2}-\d{3}-\d{4}$">
+                          </div>
+                      </div>
+                      </div>
+                      <div class="form-group row">
+                          <div class="col-lg-8 col-md-8 col-sm-8">
+                              <label for="email">Email address*</label>
+                              <input placeholder="somebody@something.com" class="form-control" type="email" title="Enter your email address" id="email" required="required">
+                          </div>
+                      </div>
+                      <div class="form-group row">
+                          <div class="col-lg-8 col-md-8 col-sm-8">
+                              <label for="messagebox">Message*</label>
+                              <textarea placeholder="Your message here" class="form-control" id="message-box" title="Type a message" required style="resize:none" cols="40" rows="5"></textarea>
+                              <p id="char-count-label">Character Count:</p>
+                              <p id="char-count"></p>
+                              <button id="submit-button" type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end Contact container -->
+
+    <hr>
+    <footer class="container gray-background">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://twitter.com/ashleyddesigns1" class="twitter-follow-button" data-show-count="false">Follow @ashleyddesigns1</a>
+            </div>
+            <div class="fb-like col-md-3" data-href="https://www.facebook.com/ashleyddesigns" data-width="200" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+            <div class="col-md-6">
+                <p><strong>&copy; Ashley Donohoe 2015</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 
+    ================================================== -->
+    <!-- Can place script tags with JavaScript files here -->
+
+    <script type="text/javascript">
+        var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+            var href = $.attr(this, 'href');
+            $root.animate({
+                scrollTop: $(href).offset().top
+            }, 500, function() {
+                window.location.hash = href;
+            });
+            return false;
+        });
+    </script>
+    
+    		  <script type="text/javascript">
+            
+            <!--var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 39.1363401, lng: -84.5404014},
+                zoom: 8
+              });
+            }-->
+
+    		</script>
+     <script src="js/scripts.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIxyA3DBP7CBth4E1edDkvrcUD10_5-XM&callback=initMap">
+    </script>
+
+</body>
+
+</html>

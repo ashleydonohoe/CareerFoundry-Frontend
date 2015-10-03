@@ -1,0 +1,288 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.anchor {
+    padding-top: 30px;
+}
+
+hr {
+    color: #494949;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.col-md-6 {
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Oswald", Futura, Helvetica, Arial, sans-serif;
+}
+
+p,
+li,
+td,
+th {
+    font-family: Georgia, Times, Times New Roman, serif;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.gray-background {
+	background-color: #d0d0d0;
+}
+
+.white-text {
+	color: white;
+}
+
+/* Carousel styles */
+#carousel-example-generic {
+    padding-top: 50px;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px black;
+    top: 25px;
+    bottom: auto;
+}
+
+/*About Styles */
+
+
+.main-text {
+    padding-top: 10px;
+    clear: both;
+}
+
+.skills {
+    background-color: #5ad4c2;
+    color: #fff;
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.intro {
+    margin-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.intro p {
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    -webkit-margin-before: 0;
+    margin-top: 0;
+}
+
+/* Work Samples Styles */
+
+.image {
+	box-sizing: border-box;
+	border: 2px solid pink;
+	width: 274px;
+	height: 192px;
+	margin: 30px;
+	display: inline-block;
+	position: relative;
+	background-repeat: no-repeat;
+}
+	
+.info {
+	display: inline-block;
+	color: black;
+	font-family: Futura;
+	background-color: rgba(255, 255, 255, .5);
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 0.5em;
+	line-height: 1.6;
+	position: absolute;
+	height: 192px;
+	width: 274px;
+	word-break:break-all;
+}
+
+.proj-title {
+	font-weight: 100;
+}
+
+/*
+	Contact Styles
+
+*/
+
+#contact-section {
+    background-image: url("../img/paralax.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.container.contact {
+    padding: 0 20px 20px;
+    opacity: 0.85;
+}
+
+.contact-info {
+    padding-top: 20px;
+}
+
+.form-control {
+    width: 80%;
+}
+
+.form {
+    padding-top: 0;
+	padding-left: 100px;
+}
+
+
+.glyphicon:hover {
+    color: blue;
+}
+
+#visible-comment {
+	padding-left: 20px;
+}
+
+#char-count-label {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#char-count {
+	background-color: white;
+	width: 30px;
+}
+
+#map {
+	height: 300px;
+	width: 100%;
+}
+
+/* FAQ Styles */
+
+.faq-section {
+    background-image: url("../img/faq_image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.panel-heading h4 {
+    font-size: 1.4em;
+}
+
+.faq-heading h1 {
+    text-shadow: 2px 2px black;
+}
+
+#accordion {
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.learn-more {
+    text-align: left;
+    float: left;
+    margin-left: 20px;
+}
+
+.modal-button {
+    float: right;
+    padding: 15px;
+}
+
+.modal-body {
+    height: 500px;
+}
+
+#modalframe {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    max-width: 100% !important;
+}
+
+#services {
+	background-color: white;
+}
+
+th,
+td {
+	padding: 10px;
+	border: 1px solid gray;
+}
+
+table {
+	margin: 0 auto;
+}
+
+/*Navigation*/
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    opacity: .9;
+}
+
+.nav {
+    float: right;
+}
+
+.navbar-brand {
+    padding-left: 25px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+/*Footer Styles*/
+footer p {
+    margin-top: 0;
+    padding-top: 0;
+    float: right;
+}
+
+footer .col-md-6 {
+    padding-top: 0;
+}
